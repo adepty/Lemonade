@@ -1,21 +1,39 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Lato:900');
+
+nav.color{
+    background: rgb(13,13,13);
+    font-style: rgb(255,255,255);
+    position: fixed;
+    z-index:9999;
+}
+
+footer{
+    width: 100%;
+    height: 100%;
+}
 
 section.sec1{
+    div{
     width: 100%;
     height: 100vh;
     background: url('../img/banner.jpg');
     background-size: cover;
+    }
 }
 
 body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    background-color: rgb(240,240,240);
 }
 
 nav{
+
     position: fixed;
     top: 0;
     left: 0;
@@ -24,6 +42,7 @@ nav{
     padding: 10px 100px;
     box-sizing:  border-box;
     transition: .5s;
+    margin-bottom: 50%;
 }
 
 nav .logo{
@@ -31,16 +50,21 @@ nav .logo{
 }
 
 nav .logo img{
-        height: 100px;
+        height: 90px;
+        margin-left: 50%;
         transition: .5s;
     }
 
 nav ul{
     float: right;
-    margin: 0;
+    margin-right: 50px;
     padding: 0;
     display: flex;
     }
+
+nav ul li a.color{
+    color: #fff;
+}
 
 nav ul li{
     list-style: none;
@@ -48,7 +72,7 @@ nav ul li{
 
 nav ul li a{
     line-height: 80px;
-    color: #fff;
+    color: rgb(255, 255, 255);
     padding: 10px 20px;
     text-decoration: none;
     text-transform: uppercase;
@@ -57,7 +81,9 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: #fff;
+    background-color: rgb(13,13,13);
+    color: #646464;
+    text-decoration: none; 
 }
 
 section.content{
@@ -72,5 +98,116 @@ section.content h1{
 
 #idvisual, #cripub, #webd, #midsoc{
     padding: 50px;
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    -o-animation-delay: 0.5s;
 }
 
+.btn-1, .text1{
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -o-animation-delay: 2s;
+}
+
+section.sec3{
+    border: none;
+}
+
+section.sec3 h4{
+        font: 2em;
+        font-family: 'Oswald', sans-serif;
+}
+
+section.sec6 p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+div.footer{
+    background-color: rgb(13,13,13);
+    width: 100%;
+    color: #808080;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+
+    img{
+        width: 15%;
+        float: right;
+    }
+}
+section.sec4{
+    text-align: center;
+    font-size: 30px;
+
+    margin-top: 20%;
+    margin-bottom: 20%;
+
+    button{
+        width: 30%;
+        height: 20%;
+        font-size: 18px;
+    }
+}
+
+section.sec6{
+    text-align: center;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.line{
+    color: #ff3399;
+    font-size: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.font-lato{
+        letter-spacing:50px;
+        font-family: 'Roboto', sans-serif;
+}
+
+#portfolio{
+    width: 900px;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.portfolio-item{
+    float: left;
+    width: 20%;
+    background-color: rgb(13,13,13);
+    padding: 20px 0;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+}
+
+.portfolio-item:hover{
+    background-color: none;
+    color: white;
+    text-decoration: none;
+}
+
+.blockcontainer{
+  width: 10%;
+  display: block;
+  margin: 0 auto;
+  box-sizing: border-box;
+ }
+
+.blockcontainer img{
+  width: 100%;
+}
+
+section.sec5{
+    text-align: center;
+}
+
+section.secslide{
+    div{
+    background-color: rgb(13,13,13);
+    width: 900px;
+    }
+}
