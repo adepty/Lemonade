@@ -9,8 +9,12 @@
 	<meta charset="utf-8">
 	<title>Lemonade</title>
 
+	<!-- Animated CSS -->
+	 <link rel="stylesheet"
+ 	 href="node_modules/animate.css/animate.min.css">
+
 	<!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <!-- LESS -->
 	<link rel="stylesheet/less" type="text/css" href="css/style.less">
@@ -19,10 +23,35 @@
 	<!--Font Awesome -->
 	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
 
+	<!--JQuery-->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+	<!-- Stricky Effect -->
+	<script type="text/javascript">
+		$(window).on('scroll', function(){
+			if($(window).scrollTop()){
+				$('nav').addClass('color');
+				$('.logo img').attr('src', 'img/logo-branco.png');
+				$('li a').addClass('color');
+				$('#idvisual, #cripub, #webd, #midsoc').addClass('animated fadeInUp');
+				$('.btn-1').addClass('animated fadeInUp');
+				$('.text1').addClass('animated fadeInDown');
+
+			}else{
+				$('nav').removeClass('color');
+				$('.logo img').attr('src', 'img/logo-dark.png');
+				$('li a').removeClass('color');
+				$('#idvisual, #cripub, #webd, #midsoc').removeClass('animated fadeInUp');
+				$('.btn-1').removeClass('animated fadeInUp');
+				$('.text1').removeClass('animated fadeInDown');
+			}
+		})
+	</script>
+
 </head>
 <body>
 	<nav>
-		<div class="logo">
+		<div id="logo" class="logo">
 			<a href="#"><img src="img/logo-branco.png"></a>
 		</div>
 		<ul>
@@ -35,7 +64,12 @@
 	</nav>
 
 	<!-- QUEM SOMOS -->
-	<section class="sec1"></section>
+	<section class="sec1">
+		<div class="col-12">
+			
+		</div>
+	</section>
+
 	<section class="content">
 	<div class="col-12 row">
 		<div class="">
@@ -49,47 +83,47 @@
 
 	<!-- NOSSOS SERVIÇOS -->
 	<section class="sec3">
-		<div class="row nb-5">
+		<div class="row">
 		<!-- IDENTIDADE VISUAL -->
-		<div id="idvisual" class="col-sm-3">
+		<div id="idvisual" class="col-sm-4">
 			<div class="card">
 			<i class="fas fa-paint-brush"></i>
 				<div class="card-body">
 						<h4>n hac habitasse platea</h4>
-
+						<div class="line"><p>_______</p></div>
 						<p> Vivamus elementum eget est sed vehicula. Proin imperdiet tellus quis neque blandit, vitae convallis lorem fermentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus tempus, nisl a ornare pellentesque, sem augue accumsan quam, sed varius est nibh posuere nunc.</p>
-				</div>
+			</div>
 			</div>			
 		</div>
 		<!-- CRIAÇÕES PUBLICITÁRIAS -->
-		<div id="cripub" class="col-sm-3">
+		<div id="cripub" class="col-sm-4">
 			<div class="card">
 			<i class="far fa-lightbulb"></i>
 				<div class="card-body">
 					<h4>n hac habitasse platea</h4>
-
+					<p class="line">_______</p>
 						<p> Vivamus elementum eget est sed vehicula. Proin imperdiet tellus quis neque blandit, vitae convallis lorem fermentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus tempus, nisl a ornare pellentesque, sem augue accumsan quam, sed varius est nibh posuere nunc.</p>
 				</div>
 			</div>			
 		</div>
 		<!-- WEB DESIGNERS -->
-		<div id="webd" class="col-sm-3">
+		<div id="webd" class="col-sm-4">
 			<div class="card">
 				<i class="fas fa-laptop"></i>
 				<div class="card-body">
 					<h4>n hac habitasse platea</h4>
-
+					    <p class="line">_______</p>
 						<p> Vivamus elementum eget est sed vehicula. Proin imperdiet tellus quis neque blandit, vitae convallis lorem fermentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus tempus, nisl a ornare pellentesque, sem augue accumsan quam, sed varius est nibh posuere nunc.</p>
 				</div>
 			</div>			
 		</div>
 		<!-- GERENCIAMENTO MÍDIAS SOCIAIS -->
-		<div id="midsoc" class="col-sm-3">
+		<div id="midsoc" class="col-sm-4">
 			<div class="card">
 			<i class="far fa-hand-point-left"></i>
 				<div class="card-body">
 					<h4>n hac habitasse platea</h4>
-
+					<p class="line">_______</p>
 						<p> Vivamus elementum eget est sed vehicula. Proin imperdiet tellus quis neque blandit, vitae convallis lorem fermentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus tempus, nisl a ornare pellentesque, sem augue accumsan quam, sed varius est nibh posuere nunc.</p>
 				</div>
 				</div>
@@ -98,8 +132,73 @@
 	</div>
 	</section>
 
-	<section class="sec4"></section>
-	<section class="sec5"></section>
+<section class="sec4">
+	<div class="col-sm-12 ny-5">	
+		<p class="text1"> O que a Lemonade pode fazer por você hoje?</p>
+		<a href="#" class="font-lato"><button class="btn-1 btn btn-outline-dark rounded-0" style="border-width: 5px">SOLICITE UM ORÇAMENTO</button></a>
+	</div>	
+</section>
+
+<section class="secslide">
+	<div class="col-sm-12">
+		<div class="col-sm-12">
+			
+		</div>
+	</div>	
+</section>
+
+<section class="sec5 container">
+	<div id="portfolio" class="col-14 row align-middle">
+			<p id="todos" class="portfolio-item"><a href="#">Todos</a></p>
+			<p id="campanhas" class="portfolio-item"><a href="#">Campanhas</a></p>
+			<p id="design" class="portfolio-item"><a href="#">Designer Gráficos</a></p>
+			<p id="web" class="portfolio-item"><a href="#">Web</a></p>
+			<p id="social" class="portfolio-item"><a href="#">Social Media</a></p>
+	</div>
+<div class="col-sm-14 row">
+	<div class="blockcontainer">
+		<img src="img/campanha.jpg" class="list-item campanha" style="width: 280px; height: 280px">
+		<img src="img/design.jpg" class="list-item design" style="width: 280px; height: 280px">
+		<img src="img/web.jpg" class="list-item web" style="width: 280px; height: 280px">
+		<img src="img/media.jpg" class="list-item media" style="width: 280px; height: 280px">
+	</div>
+</div>
+</section>
+
+<section class="sec6">
+<div class=" col-sm-24 row">
+	<div class="col-sm-4">
+	<div class="card-body">
+		<i class="fas fa-mobile"></i>
+		<div id="telefone col-sm-4"><p>11 9 4249-1354</p></div></div></div>
+	<div class="col-sm-4">
+	<div class="card-body">
+		<i class="fas fa-map-marker"></i>
+		<div id="endereco col-sm-4"><p>Rua Marechal Floriano Peixoto Nº 348 - Vila Santa Terezinha - Itatiba / SP</p></div></div></div>
+<div class="col-sm-4">
+	<div class="card-body">
+		<i class="fas fa-envelope"></i>
+		<div id="email col-sm-4"><p>lemonadecreativeoffice@gmail.com</p></div></div></div>
+</div>
+</section>
+
+	<footer>
+	<div class="footer col-12 py-3 pb-3 row">
+	<div class="textf col-sm-5 ml-3 py-4 row">
+			<p>® LEMONADE CREATIVE OFFICE - TODOS OS DIREITOS RESERVADOS.</p>
+		</div>
+				<div class="col-sm-5">
+					<img src="img/logo-branco.png">
+					</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- bootstrap -->
+	<script type="text/javascript" href="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+	<!-- Popper -->
+	<script href="node_modules/popper.js/dist/popper.js"></script>
 
 </body>
 </html>
